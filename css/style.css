@@ -57,8 +57,9 @@ header {
 /**---------MAIN---------*/
 
 .hero img {
-    max-height: 100%; 
-    margin: 0 auto; 
+    max-height: 100%;
+    margin: 0 auto;
+    width: 100%
 }
 
 main h1 {
@@ -244,8 +245,9 @@ footer div ul li a {
     width: 100px;
 }
 
-.social-media img {
-    width: 50px;
+.social-media i {
+    font-size: 40px;
+    color: #004E89;
     padding: 10px;
 }
 
