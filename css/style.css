@@ -125,6 +125,96 @@ main h1 {
     text-align: center;
 }
 
+/**-------MAIN NOSOTROS------*/
+
+.nosotros p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 2px;
+    color: #004E89;
+}
+
+.nosotros-h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #004E89;
+}
+.nosotros-hacemos ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 120px;
+    text-decoration: none;
+    color: #004E89;
+}
+
+
+.nosotros-h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #004E89;
+}
+
+.nosotros-h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-right: 120px;
+    padding: 10px;
+    color: #004E89;
+}
+
+.marca-h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 35px;
+    margin-right: 120px;
+    padding: 10px;
+    color: #FF6B35;
+}
+
+.slogan-h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 30px;
+    padding: 10px;
+    color: #004E89;
+}
+
+.hashtags {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-right: 120px;
+    padding: 10px;
+    color: #FF6B35;
+}
+
+.bullet {
+    margin-left: 10px;
+    margin-right: 5px;
+    height: 20px;
+    width: auto;
+}
+
 /**--------FOOTER--------*/
 
 footer {
