@@ -117,15 +117,6 @@ main h1 {
     -moz-box-shadow: -4px 3px 13px 0px #FF6B35;
 }
 
-.opiniones h2 {
-    margin-top: 30px;
-    color: #004E89;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    font-weight: 200px;
-    text-align: center;
-}
-
 /**-------MAIN NOSOTROS------*/
 
 .nosotros p {
@@ -257,5 +248,4 @@ div form div .newsletter {
     color: #004E89;
 }
 
-/**--- QUERIES ---*/
-
+/**--- MEDIA QUERIES ---*/
