@@ -22,7 +22,6 @@ header {
 
 .nav-link {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* font-weight: 600; */
     color: #004E89;
     text-decoration: none!important;
     font-size: 20px;
@@ -122,9 +121,11 @@ main h1 {
 }
 
 /**-------MAIN NOSOTROS------*/
+.nosotros {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 .nosotros p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     margin-left: 20px;
     margin-right: 20px;
@@ -132,8 +133,7 @@ main h1 {
     color: #004E89;
 }
 
-.nosotros-h4 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.nosotros h2 {
     font-size: 25px;
     font-weight: bold;
     margin-left: 20px;
@@ -142,8 +142,15 @@ main h1 {
     padding-bottom: 2%;
     color: #004E89;
 }
-.nosotros-hacemos ul li {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.bullet {
+    margin-left: 10px;
+    margin-right: 5px;
+    height: 20px;
+    width: auto;
+}
+
+.nosotros div ul li {
     font-weight: 400;
     font-size: 22px;
     margin-left: 30px;
@@ -152,9 +159,58 @@ main h1 {
     color: #004E89;
 }
 
+.nosotros h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-right: 120px;
+    padding: 10px;
+    color: #004E89;
+}
 
-.nosotros-h5 {
+.nosotros .marca {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 35px;
+    margin-right: 120px;
+    padding: 10px;
+    color: #FF6B35;
+}
+
+.nosotros .slogan {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 30px;
+    padding: 10px;
+    color: #004E89;
+}
+
+.nosotros .hashtags {
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-right: 120px;
+    padding: 10px;
+    color: #FF6B35;
+}
+
+
+/**-------MAIN AYUDA------*/
+
+.ayuda {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ayuda p {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 2px;
+    color: #004E89;
+}
+
+.ayuda h2 {
     font-size: 25px;
     font-weight: bold;
     margin-left: 20px;
@@ -164,51 +220,164 @@ main h1 {
     color: #004E89;
 }
 
-.nosotros-h6 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.ayuda h3 {
     font-size: 25px;
-    font-weight: 400;
-    margin-left: 30px;
-    margin-right: 120px;
-    padding: 10px;
-    color: #004E89;
-}
-
-.marca-h5 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
     font-weight: bold;
-    margin-left: 35px;
-    margin-right: 120px;
-    padding: 10px;
-    color: #FF6B35;
-}
-
-.slogan-h6 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 400;
     margin-left: 30px;
+    margin-right: 120px;
     padding: 10px;
     color: #004E89;
 }
 
-.hashtags {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
+.ayuda ul li {
     font-weight: 400;
+    font-size: 22px;
     margin-left: 30px;
     margin-right: 120px;
-    padding: 10px;
+    text-decoration: none;
+    color: #004E89;
+}
+
+.ayuda ol li {
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-right: 120px;
+    text-decoration: none;
+    color: #004E89;
+}
+
+.ayuda p a {
+    font-size: 25px;
+    color: #FF6B35;
+    text-decoration: none;
+}
+
+.faq h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5%;
     color: #FF6B35;
 }
 
-.bullet {
-    margin-left: 10px;
-    margin-right: 5px;
-    height: 20px;
-    width: auto;
+.faq h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #004E89;
+}
+
+.faq p {
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #004E89;
+}
+
+/**-----MAIN CONTACTANOS----*/
+
+.container {
+	max-width:800px;
+	width:100%;
+	margin:0 auto;
+	position: relative;
+}
+
+.contact input[type="text"], .contact input[type="email"], .contact input[type="tel"], .contact textarea, .contact button[type="submit"] { font:400 16px/20px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.contact {
+	background:#F7C59F;
+	padding:25px;
+	margin:50px 0;
+}
+
+.contact h3 {
+	color: #FF6B35;
+    text-align: center;
+    font-weight: bold;
+	display: block;;
+	font-size: 35px;
+}
+
+.contact h4 {
+    color: #1A659E;
+    text-align: center;
+	margin:5px 0 15px;
+	display:block;
+	font-size: 18px;
+    font-style: italic;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+.contact input[type="text"], .contact input[type="email"], .contact input[type="tel"], .contact input[type="url"], .contact textarea {
+	width:100%;
+	border:1px solid #FF6B35;
+	background:#EFEFD0;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+.contact input[type="text"]:hover, .contact input[type="email"]:hover, .contact input[type="tel"]:hover, .contact input[type="url"]:hover, .contact textarea:hover {
+	-webkit-transition: color #1A659E 0.3s ease-in-out;
+	-moz-transition: color #1A659E 0.3s ease-in-out;
+	transition: color #1A659E 0.3s ease-in-out;
+	border:1px solid #1A659E;
+}
+
+.contact textarea {
+	height:100px;
+	max-width:100%;
+    resize:none;
+}
+
+.contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#1A659E;
+	color:#EFEFD0;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:25px;
+}
+
+.contact button[type="submit"]:hover {
+	background:#1A659E;
+	-webkit-transition:color #F7C59F 0.3s ease-in-out;
+	-moz-transition:color #F7C59F 0.3s ease-in-out;
+	transition: color #1A659E 0.3s ease-in-out;
+}
+
+.contact button[type="submit"]:active { box-shadow:inset 0 1px 3px #FF6B35 (0, 0, 0, 0.5); }
+
+.contact input:focus, .contact textarea:focus {
+	outline:0;
+	border:1px solid #1A659E;
+}
+::-webkit-input-placeholder {
+    color:#1A659E;
+}
+:-moz-placeholder {
+    color:#1A659E;
+}
+::-moz-placeholder {
+    color:#1A659E;
+}
+:-ms-input-placeholder {
+    color:#1A659E;
 }
 
 /**--------FOOTER--------*/
@@ -233,7 +402,6 @@ footer div ul {
 footer div ul li a {
     color: #004E89;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* font-weight: 600; */
     font-size: 18px;
     text-decoration: none;
 }
