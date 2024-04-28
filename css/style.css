@@ -16,6 +16,7 @@ header {
     background-color: #F7C59F;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 /**----NAVBAR------*/
