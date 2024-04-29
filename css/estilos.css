@@ -1,0 +1,449 @@
+@charset "UTF-8";
+/**-----RESET-----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #EFEFD0; }
+
+header {
+  background-color: #F7C59F;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header .nav-link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #004E89;
+    text-decoration: none !important;
+    font-size: 20px; }
+  header .nav-link.active {
+    color: #FF6B35; }
+  header nav div ul li .nav-link:hover {
+    color: #FF6B35; }
+  header nav div img {
+    height: 48px;
+    width: auto; }
+
+.usuario-bolsa {
+  height: 32px;
+  width: auto;
+  margin-right: 5px; }
+
+.navbar-toggler.collapsed {
+  color: #004E89;
+  border-width: 3px; }
+
+.navbar-toggler {
+  color: #FF6B35;
+  border-width: 3px; }
+
+main h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px;
+  color: #004E89; }
+
+main div .hero img {
+  max-height: 100%;
+  margin: 0 auto;
+  width: 100%; }
+
+main .grid-container {
+  margin-top: 30px;
+  align-items: center;
+  display: grid;
+  grid-auto-rows: 400px;
+  grid-template-columns: 50% 50%; }
+  main .grid-container .grid-items {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+  main .grid-container .texto-derecha-1,
+  main .grid-container .texto-derecha-2 {
+    display: flex;
+    align-items: end; }
+    main .grid-container .texto-derecha-1 p,
+    main .grid-container .texto-derecha-2 p {
+      text-align: right; }
+  main .grid-container .texto-izquierda {
+    display: flex;
+    align-items: start; }
+  main .grid-container img {
+    width: 400px;
+    box-shadow: -4px 3px 13px 0px #FF6B35;
+    -webkit-box-shadow: -4px 3px 13px 0px #FF6B35;
+    -moz-box-shadow: -4px 3px 13px 0px #FF6B35; }
+  main .grid-container h2 a {
+    color: #004e89;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold; }
+  main .grid-container p {
+    color: #004E89;
+    font-size: 20px;
+    font-weight: 200px; }
+
+main a, a main:hover {
+  text-decoration: none;
+  color: inherit; }
+
+main .section-products {
+  padding: 20px 0 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  main .section-products .header {
+    margin-bottom: 50px; }
+    main .section-products .header h3 {
+      font-size: 35px;
+      color: #004e89;
+      font-weight: bold; }
+    main .section-products .header h2 {
+      font-size: 30px;
+      color: #FF6B35;
+      font-weight: 500; }
+  main .section-products:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1; }
+  main .section-products .single-product {
+    margin-bottom: 26px; }
+    main .section-products .single-product .part-1 {
+      position: relative;
+      height: 290px;
+      max-height: 290px;
+      margin-bottom: 20px;
+      overflow: hidden; }
+      main .section-products .single-product .part-1 ul li {
+        display: inline-block;
+        margin-right: 4px; }
+        main .section-products .single-product .part-1 ul li a {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          color: #EFEFD0;
+          background-color: #FF6B35;
+          text-align: center;
+          box-shadow: 0 2px 20px rgba(50, 50, 50, 0.1);
+          transition: color 0.2s; }
+      main .section-products .single-product .part-1 .discount, main .section-products .single-product .part-1 .new {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        color: #EFEFD0;
+        background-color: #FF6B35;
+        padding: 2px 8px;
+        text-transform: uppercase;
+        font-size: 0.85rem; }
+      main .section-products .single-product .part-1 .new {
+        left: 0;
+        background-color: #FF6B35; }
+      main .section-products .single-product .part-1 ul {
+        position: absolute;
+        bottom: -41px;
+        left: 20px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        opacity: 0;
+        transition: bottom 0.5s, opacity 0.5s; }
+    main .section-products .single-product .part-1::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      transition: all 0.3s; }
+    .single-product main .section-products .single-product:hover .part-1::before {
+      transform: scale(1.2, 1.2) rotate(5deg); }
+    main .section-products .single-product .part-2 .product-title {
+      color: #004E89;
+      font-size: 20px; }
+    main .section-products .single-product .part-2 h4 {
+      display: inline-block;
+      color: #004E89;
+      font-size: 20px; }
+    main .section-products .single-product .part-2 .product-old-price {
+      position: relative;
+      padding: 0 7px;
+      margin-right: 2px;
+      opacity: 0.6; }
+    main .section-products .single-product .part-2 .product-old-priceç::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #FF6B35;
+      transform: translateY(-50%); }
+  main .section-products #product-1 .part-1::before {
+    background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/img/adulto-abrazo-caballo.jpg") no-repeat center;
+    background-size: cover;
+    transition: all 0.3s; }
+  main .section-products #product-2 .part-1::before {
+    background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/img/adulto-corazon-caballo.jpg") no-repeat center;
+    background-size: cover; }
+  main .section-products #product-3 .part-1::before {
+    background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/img/ninio-caballos-corazon.jpg") no-repeat center;
+    background-size: cover; }
+  main .section-products #product-4 .part-1::before {
+    background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/img/adulto-abrazo-caballo.jpg") no-repeat center;
+    background-size: cover; }
+
+main .nosotros {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  main .nosotros div p {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 2px;
+    color: #004E89; }
+  main .nosotros div h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #004E89; }
+  main .nosotros div div ul li {
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-right: 120px;
+    text-decoration: none;
+    color: #004E89; }
+  main .nosotros div .bullet {
+    margin-left: 10px;
+    margin-right: 5px;
+    height: 20px;
+    width: auto; }
+  main .nosotros div h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-right: 120px;
+    padding: 10px;
+    color: #004E89; }
+  main .nosotros div .marca {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 35px;
+    margin-right: 120px;
+    padding: 10px;
+    color: #FF6B35; }
+  main .nosotros div .slogan {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 30px;
+    padding: 10px;
+    color: #004E89; }
+  main .nosotros div .hashtags {
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-right: 120px;
+    padding: 10px;
+    color: #FF6B35; }
+
+main .ayuda {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  main .ayuda h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #004E89; }
+  main .ayuda p {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 2px;
+    color: #004E89; }
+    main .ayuda p a {
+      font-size: 25px;
+      color: #FF6B35;
+      text-decoration: none; }
+  main .ayuda h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 120px;
+    padding: 10px;
+    color: #004E89; }
+  main .ayuda ul li {
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-right: 120px;
+    text-decoration: none;
+    color: #004E89; }
+  main .ayuda ol li {
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-right: 120px;
+    text-decoration: none;
+    color: #004E89; }
+
+main .faq h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 5%;
+  color: #FF6B35; }
+
+main .faq div h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: #004E89; }
+
+main .faq div p {
+  font-size: 20px;
+  font-style: italic;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #004E89; }
+
+main .container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+main .contact {
+  background: #F7C59F;
+  padding: 25px;
+  margin: 50px 0; }
+  main .contact h3 {
+    color: #FF6B35;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    font-size: 35px; }
+  main .contact h4 {
+    color: #1A659E;
+    text-align: center;
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 18px;
+    font-style: italic; }
+  main .contact fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%; }
+
+main .contact input[type="text"],
+main .contact input[type="email"],
+main .contact input[type="tel"],
+main .contact textarea,
+main .contact button[type="submit"] {
+  font: 400 16px/20px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+main .contact input[type="text"],
+main .contact input[type="email"],
+main .contact input[type="tel"],
+main .contact input[type="url"],
+main .contact textarea {
+  width: 100%;
+  border: 1px solid #FF6B35;
+  background: #EFEFD0;
+  margin: 0 0 5px;
+  padding: 10px; }
+
+main .contact input[type="text"]:hover,
+main .contact input[type="email"]:hover,
+main .contact input[type="tel"]:hover,
+main .contact input[type="url"]:hover,
+main .contact textarea:hover {
+  -webkit-transition: color #1A659E 0.3s ease-in-out;
+  -moz-transition: color #1A659E 0.3s ease-in-out;
+  transition: color #1A659E 0.3s ease-in-out;
+  border: 1px solid #1A659E; }
+
+main textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none; }
+
+main button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #1A659E;
+  color: #EFEFD0;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 25px; }
+
+button[type="submit"] main:hover {
+  background: #1A659E;
+  -webkit-transition: color #F7C59F 0.3s ease-in-out;
+  -moz-transition: color #F7C59F 0.3s ease-in-out;
+  transition: color #1A659E 0.3s ease-in-out; }
+
+main button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px #FF6B35 0, 0, 0, 0.5; }
+
+main .contact input:focus,
+main .contact textarea:focus {
+  outline: 0;
+  border: 1px solid #1A659E; }
+
+main ::-webkit-input-placeholder {
+  color: #1A659E; }
+
+main :-moz-placeholder {
+  color: #1A659E; }
+
+main ::-moz-placeholder {
+  color: #1A659E; }
+
+main :-ms-input-placeholder {
+  color: #1A659E; }
+
+footer {
+  background-image: linear-gradient(to top, #F7C59F, transparent);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  padding-top: 100px;
+  max-height: 100%; }
+  footer .logo-footer img {
+    width: 100px; }
+  footer div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    footer div ul li a {
+      color: #004E89;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 18px;
+      text-decoration: none; }
+  footer div i {
+    font-size: 40px;
+    color: #004E89;
+    padding: 10px; }
+  footer div form div .newsletter {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #004E89; }

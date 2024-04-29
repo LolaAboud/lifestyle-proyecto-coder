@@ -100,26 +100,27 @@ main h1 {
     font-weight: 200px;
 }
 
-.texto-derecha-1, .texto-derecha-2 {
-    display: flex;
-    align-items: end;
-}
-.texto-derecha-1 p, .texto-derecha-2 p{
-    text-align: right;
-}
-
-
-.texto-izquierda {
-    display: flex;
-    align-items: start;
-}
-
 .grid-items img {
     width: 400px;
     box-shadow: -4px 3px 13px 0px #FF6B35;
     -webkit-box-shadow: -4px 3px 13px 0px #FF6B35;
     -moz-box-shadow: -4px 3px 13px 0px #FF6B35;
 }
+
+.texto-derecha-1, .texto-derecha-2 {
+    display: flex;
+    align-items: end;
+}
+.texto-derecha-1 p, .texto-derecha-2 p {
+    text-align: right;
+}
+
+.texto-izquierda {
+    display: flex;
+    align-items: start;
+}
+
+
 
 /**-------MAIN NOSOTROS------*/
 .nosotros {
@@ -144,13 +145,6 @@ main h1 {
     color: #004E89;
 }
 
-.bullet {
-    margin-left: 10px;
-    margin-right: 5px;
-    height: 20px;
-    width: auto;
-}
-
 .nosotros div ul li {
     font-weight: 400;
     font-size: 22px;
@@ -160,7 +154,14 @@ main h1 {
     color: #004E89;
 }
 
-.nosotros h3 {
+.bullet {
+    margin-left: 10px;
+    margin-right: 5px;
+    height: 20px;
+    width: auto;
+}
+
+.nosotros div h3 {
     font-size: 25px;
     font-weight: 400;
     margin-left: 30px;
@@ -203,14 +204,6 @@ main h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.ayuda p {
-    font-size: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 2px;
-    color: #004E89;
-}
-
 .ayuda h2 {
     font-size: 25px;
     font-weight: bold;
@@ -218,6 +211,14 @@ main h1 {
     margin-right: 20px;
     padding-top: 2%;
     padding-bottom: 2%;
+    color: #004E89;
+}
+
+.ayuda p {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 2px;
     color: #004E89;
 }
 
@@ -230,7 +231,7 @@ main h1 {
     color: #004E89;
 }
 
-.ayuda ul li {
+.ayuda h3 ul li {
     font-weight: 400;
     font-size: 22px;
     margin-left: 30px;
@@ -263,7 +264,7 @@ main h1 {
     color: #FF6B35;
 }
 
-.faq h3 {
+.faq div h3 {
     font-size: 22px;
     font-weight: bold;
     margin-left: 20px;
@@ -273,7 +274,7 @@ main h1 {
     color: #004E89;
 }
 
-.faq p {
+.faq div p {
     font-size: 20px;
     font-style: italic;
     margin-left: 20px;

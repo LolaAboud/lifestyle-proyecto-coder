@@ -1,0 +1,493 @@
+main {
+    h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+        padding: 25px;
+        color: #004E89;
+    }
+
+    div {
+        .hero {
+            img {
+                max-height: 100%;
+                margin: 0 auto;
+                width: 100%
+            }
+        }
+    }
+
+    .grid-container {
+        margin-top: 30px;
+        align-items: center;
+        display: grid;
+        grid-auto-rows: 400px;
+        grid-template-columns: 50% 50%;
+
+        .grid-items {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .texto-derecha-1,
+        .texto-derecha-2 {
+            display: flex;
+            align-items: end;
+
+            p {
+                text-align: right;
+            }
+        }
+
+        .texto-izquierda {
+            display: flex;
+            align-items: start;
+        }
+
+        img {
+            width: 400px;
+            box-shadow: -4px 3px 13px 0px #FF6B35;
+            -webkit-box-shadow: -4px 3px 13px 0px #FF6B35;
+            -moz-box-shadow: -4px 3px 13px 0px #FF6B35;
+        }
+
+        h2 {
+            a {
+                color: #004e89;
+                text-decoration: none;
+                font-size: 35px;
+                font-weight: bold;
+            }
+        }
+
+        p {
+            color: #004E89;
+            font-size: 20px;
+            font-weight: 200px;
+        }
+    }
+    a, a &:hover {
+        text-decoration: none;
+    color: inherit;
+    }
+    .section-products {
+        padding: 20px 0 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        .header {
+            margin-bottom: 50px;
+            h3 {
+                font-size: 35px;
+                color: #004e89;
+                font-weight: bold
+            }
+            h2 {
+                font-size: 30px;
+                color: #FF6B35;
+                font-weight: 500;
+            }
+        }
+        &:hover {
+            .part-1 {
+                ul {
+                    bottom: 30px;
+                    opacity: 1;
+                }
+            }
+        }
+        .single-product {
+            margin-bottom: 26px;
+            .part-1 {
+                position: relative;
+                height: 290px;
+                max-height: 290px;
+                margin-bottom: 20px;
+                overflow: hidden;
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right: 4px;
+                        a {
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            color: #EFEFD0;
+                            background-color: #FF6B35;
+                            text-align: center;
+                            box-shadow: 0 2px 20px rgba(50, 50, 50, 0.1);
+                            transition: color 0.2s;
+                        }
+                    }
+                }
+                .discount, .new{
+                    position: absolute;
+                    top: 15px;
+                    left: 20px;
+                    color: #EFEFD0;
+                    background-color: #FF6B35;
+                    padding: 2px 8px;
+                    text-transform: uppercase;
+                    font-size: 0.85rem;
+                }
+                .new {
+                    left: 0;
+                    background-color: #FF6B35;
+                }
+                ul {
+                    position: absolute;
+                    bottom: -41px;
+                    left: 20px;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    opacity: 0;
+                    transition: bottom 0.5s, opacity 0.5s;
+                }
+            }
+            .part-1::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                transition: all 0.3s;
+            }
+            .single-product &:hover .part-1::before {
+                transform: scale(1.2, 1.2) rotate(5deg);
+            }
+            .part-2 {
+                .product-title {
+                    color: #004E89;
+                    font-size: 20px;
+                }
+                h4 {
+                    display: inline-block;
+                    color: #004E89;
+                    font-size: 20px;
+                }
+                .product-old-price {
+                    position: relative;
+                    padding: 0 7px;
+                    margin-right: 2px;
+                    opacity: 0.6;
+                }
+                .product-old-priceç::after{
+                    position: absolute;
+                    content: "";
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                    background-color: #FF6B35;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        #product-1 .part-1::before {
+            background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/img/adulto-abrazo-caballo.jpg") no-repeat center;
+            background-size: cover;
+            transition: all 0.3s; 
+        }
+        #product-2 .part-1::before {
+            background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/img/adulto-corazon-caballo.jpg") no-repeat center;
+            background-size: cover;
+        }
+        #product-3 .part-1::before {
+            background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/img/ninio-caballos-corazon.jpg") no-repeat center;
+            background-size: cover;
+        }
+        #product-4 .part-1::before {
+            background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/img/adulto-abrazo-caballo.jpg") no-repeat center;
+            background-size: cover;
+        }
+    }
+    .nosotros {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        div {
+            p {
+                font-size: 25px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 2px;
+                color: #004E89;
+            }
+
+            h2 {
+                font-size: 25px;
+                font-weight: bold;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                color: #004E89;
+            }
+
+            div {
+                ul {
+                    li {
+                        font-weight: 400;
+                        font-size: 22px;
+                        margin-left: 30px;
+                        margin-right: 120px;
+                        text-decoration: none;
+                        color: #004E89;
+                    }
+                }
+            }
+
+            .bullet {
+                margin-left: 10px;
+                margin-right: 5px;
+                height: 20px;
+                width: auto;
+            }
+
+            h3 {
+                font-size: 25px;
+                font-weight: 400;
+                margin-left: 30px;
+                margin-right: 120px;
+                padding: 10px;
+                color: #004E89;
+            }
+
+            .marca {
+                font-size: 30px;
+                font-weight: bold;
+                margin-left: 35px;
+                margin-right: 120px;
+                padding: 10px;
+                color: #FF6B35;
+            }
+
+            .slogan {
+                font-size: 30px;
+                font-style: italic;
+                font-weight: 400;
+                margin-left: 30px;
+                padding: 10px;
+                color: #004E89;
+            }
+
+            .hashtags {
+                font-size: 25px;
+                font-weight: 400;
+                margin-left: 30px;
+                margin-right: 120px;
+                padding: 10px;
+                color: #FF6B35;
+            }
+        }
+    }
+
+    .ayuda {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        h2 {
+            font-size: 25px;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            color: #004E89;
+        }
+
+        p {
+            font-size: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 2px;
+            color: #004E89;
+
+            a {
+                font-size: 25px;
+                color: #FF6B35;
+                text-decoration: none;
+            }
+        }
+
+        h3 {
+            font-size: 25px;
+            font-weight: bold;
+            margin-left: 30px;
+            margin-right: 120px;
+            padding: 10px;
+            color: #004E89;
+        }
+
+        ul {
+            li {
+                font-weight: 400;
+                font-size: 22px;
+                margin-left: 30px;
+                margin-right: 120px;
+                text-decoration: none;
+                color: #004E89;
+            }
+        }
+
+        ol {
+            li {
+                font-weight: 400;
+                font-size: 22px;
+                margin-left: 30px;
+                margin-right: 120px;
+                text-decoration: none;
+                color: #004E89;
+            }
+        }
+    }
+
+    .faq {
+        h2 {
+            font-size: 25px;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-top: 5%;
+            color: #FF6B35;
+        }
+            div {
+                h3 {
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding-top: 2%;
+                    padding-bottom: 2%;
+                    color: #004E89;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-style: italic;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    color: #004E89;
+                }
+        }
+    }
+
+    .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .contact {
+        background: #F7C59F;
+        padding: 25px;
+        margin: 50px 0;
+
+        h3 {
+            color: #FF6B35;
+            text-align: center;
+            font-weight: bold;
+            display: block;
+            ;
+            font-size: 35px;
+        }
+
+        h4 {
+            color: #1A659E;
+            text-align: center;
+            margin: 5px 0 15px;
+            display: block;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        fieldset {
+            border: medium none !important;
+            margin: 0 0 10px;
+            min-width: 100%;
+            padding: 0;
+            width: 100%;
+        }
+    }
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact input[type="tel"],
+    .contact textarea,
+    .contact button[type="submit"] {
+        font: 400 16px/20px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact input[type="tel"],
+    .contact input[type="url"],
+    .contact textarea {
+        width: 100%;
+        border: 1px solid #FF6B35;
+        background: #EFEFD0;
+        margin: 0 0 5px;
+        padding: 10px;
+    }
+    .contact input[type="text"]:hover,
+    .contact input[type="email"]:hover,
+    .contact input[type="tel"]:hover,
+    .contact input[type="url"]:hover,
+    .contact textarea:hover {
+        -webkit-transition: color #1A659E 0.3s ease-in-out;
+        -moz-transition: color #1A659E 0.3s ease-in-out;
+        transition: color #1A659E 0.3s ease-in-out;
+        border: 1px solid #1A659E;
+    }
+    textarea {
+        height: 100px;
+        max-width: 100%;
+        resize: none;
+    }
+    button[type="submit"] {
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        background: #1A659E;
+        color: #EFEFD0;
+        margin: 0 0 5px;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    button[type="submit"] &:hover {
+        background: #1A659E;
+        -webkit-transition: color #F7C59F 0.3s ease-in-out;
+        -moz-transition: color #F7C59F 0.3s ease-in-out;
+        transition: color #1A659E 0.3s ease-in-out;
+    }
+
+    button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px #FF6B35 (0, 0, 0, 0.5);
+    }
+
+    .contact input:focus,
+    .contact textarea:focus {
+        outline: 0;
+        border: 1px solid #1A659E;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #1A659E;
+    }
+
+    :-moz-placeholder {
+        color: #1A659E;
+    }
+
+    ::-moz-placeholder {
+        color: #1A659E;
+    }
+
+    :-ms-input-placeholder {
+        color: #1A659E;
+    }
+}
