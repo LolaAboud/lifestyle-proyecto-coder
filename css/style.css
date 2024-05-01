@@ -614,14 +614,20 @@ div form div .newsletter {
     .imagen-2 {
         grid-area: 4/1/4;
         align-items: center;
-    }  
+    }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
 }
 @media screen and (max-width: 625px) {
     main h1 {
         font-size: 35px;
     }
     .grid-items img {
-        width: 300px;
+        width: 350px;
     }
     .texto-derecha-1 h2 a {
         font-size: 25px;
