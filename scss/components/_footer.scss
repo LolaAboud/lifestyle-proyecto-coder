@@ -1,5 +1,5 @@
-footer{
-    background-image: linear-gradient(to top, #F7C59F, transparent);
+footer {
+    background-image: linear-gradient(to top, $color-2, transparent);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -7,40 +7,45 @@ footer{
     padding: 25px;
     padding-top: 100px;
     max-height: 100%;
+
     .logo-footer {
         img {
             width: 100px;
         }
     }
+
     div {
         ul {
             list-style: none;
             margin: 0;
             padding: 0;
+
             li {
                 a {
-                    color: #004E89;
+                    color: $color-5;
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-size: 18px;
+                    font-size: nth($font-size, 2);
                     text-decoration: none;
                 }
             }
         }
     }
+
     div {
         i {
-            font-size: 40px;
-            color: #004E89;
+            font-size: nth($font-size, 8);
+            color: $color-5;
             padding: 10px;
-            }
         }
+    }
+
     div {
         form {
             div {
                 .newsletter {
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-size: 20px;
-                    color: #004E89;
+                    font-size: nth($font-size, 3);
+                    color: $color-5;
                 }
             }
         }
