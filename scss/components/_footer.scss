@@ -22,10 +22,10 @@ footer {
 
             li {
                 a {
-                    color: $color-5;
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-size: nth($font-size, 2);
-                    text-decoration: none;
+                    color: map-get($links-footer, ftn-color);
+                    font-size: map-get($links-footer, ftn-size);
+                    text-decoration: map-get($links-footer, txt-deco);
                 }
             }
         }

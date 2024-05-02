@@ -1,4 +1,4 @@
-//! VARIABLES
+//! VARIABLE
 
 $color-1: #EFEFD0;
 $color-2: #F7C59F;
@@ -6,7 +6,7 @@ $color-3: #FF6B35;
 $color-4: #1A659E;
 $color-5: #004E89;
 
-//! LISTAS
+//! LISTA
 
 $font-size:
 14px,
@@ -20,10 +20,30 @@ $font-size:
 45px,
 16px;
 
-//! OPERACIONES
+//! OPERACION
 
-$ancho-img: 400px
+$ancho-img: 400px;
 
-//! MAPAS
+//! MAPA
 
+$links-footer:(
+        ftn-color: $color-5,
+        ftn-size: nth($font-size, 2),
+        txt-deco: none,
+);
 
+//! EXTEND
+
+%display-grid{
+    display: grid;
+    align-items: center;
+};
+
+//! MIXIN
+
+@mixin flex($flex, $justify, $align, $column){
+            display: $flex;
+            justify-content: $justify;
+            align-items: $align;
+            flex-direction: $column;
+};

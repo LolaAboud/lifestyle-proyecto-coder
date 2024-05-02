@@ -18,17 +18,13 @@ main {
 
     .grid-container {
         margin-top: 30px;
-        display: grid;
-        align-items: center;
+        @extend %display-grid;
         grid-auto-rows: 400px;
         grid-template-columns: repeat(2, 1fr);
 
         .grid-items {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
+            @include flex(flex, space-between, center, column)
         }
 
         .texto-derecha-1,
