@@ -145,11 +145,11 @@ a:hover {
   transition: all 0.3s; }
 
 .section-products #product-2 .part-1::before {
-  background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/vid/video-taza-girando.mp4") no-repeat center;
+  background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/img/adulto-abrazo-caballo.jpg") no-repeat center;
   background-size: cover; }
 
 .section-products #product-3 .part-1::before {
-  background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/vid/video-botellas.mp4") no-repeat center;
+  background: url("https://lolaaboud.github.io/lifestyle-proyecto-coder/img/adulto-abrazo-caballo.jpg") no-repeat center;
   background-size: cover; }
 
 .section-products #product-4 .part-1::before {
@@ -159,17 +159,26 @@ a:hover {
 .section-products .single-product .part-1 .discount,
 .section-products .single-product .part-1 .new {
   position: absolute;
-  top: 15px;
-  left: 20px;
-  color: #EFEFD0;
+  text-align: center;
+  color: #004E89;
   background-color: #FF6B35;
-  padding: 2px 8px;
+  padding: 4px 8px;
   text-transform: uppercase;
-  font-size: 14px; }
+  font-size: 18px;
+  font-weight: bold; }
+
+.section-products .single-product .part-1 .discount {
+  left: 0;
+  right: 0;
+  top: 40%;
+  background-color: #FF6B35;
+  opacity: 90%; }
 
 .section-products .single-product .part-1 .new {
-  left: 0;
-  background-color: #FF6B35; }
+  left: 60%;
+  top: 5%;
+  color: #FF6B35;
+  background-color: #004E89; }
 
 .section-products .single-product .part-1 ul {
   position: absolute;
@@ -179,7 +188,7 @@ a:hover {
   padding: 0;
   list-style: none;
   opacity: 0;
-  transition: bottom 0.5s, opacity 0.5s; }
+  transition: bottom 0.6s, opacity 0.6s; }
 
 .section-products .single-product:hover .part-1 ul {
   bottom: 30px;
@@ -195,7 +204,7 @@ a:hover {
   height: 40px;
   line-height: 40px;
   color: #EFEFD0;
-  background-color: #FF6B35;
+  background-color: #004E89;
   text-align: center;
   box-shadow: 0 2px 20px rgba(50, 50, 50, 0.1);
   transition: color 0.2s; }
