@@ -65,51 +65,78 @@ main {
         }
     }
 }
-.grid-container-shop {
-        margin-top: 30px;
-        @extend %display-grid;
-        grid-auto-rows: 400px;
-        grid-template-columns: repeat(3, 1fr);
-    }
 
-
-div {
-    .item {
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        font-size: 16px;
-        width: 225px;
-        color: $color-5;
-        float: left;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 80px;
-    }
+.body-product {
+    background: #FFC069;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+    margin: 0;
 }
 
-div {
-    .product-list {
-        width: 735px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.product-card {
+    width: 90%;
+    margin: 50px auto;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
 }
 
-div {
-    a {
-        .postimg {
-            width: 225px;
-            height: 225px;
-        }
-        .name {
-            margin-bottom: 4px;
-        }
-    }                  
+.product-card .img-product {
+    position: relative;
+    margin: 0px;
 }
 
-.clearfix {
-    clear: both;
+.product-card .img-product img {
+    width: 100%;
+}
+
+.product-card .img-product .whishlist {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #FFC069;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.product-card .info-product {
+    padding: 0px 25px;
+}
+
+.product-card .info-product .title-product {
+    font-size: 18px;
+    font-weight: 700;
+    color: #131313;
+}
+
+.product-card .info-product .description {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #414141;
+}
+
+.product-card .info-product .price {
+    background: #FFC069;
+    padding: 8px 10px;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn-cart {
+    background: #131313;
+    color: #ffffff;
+    padding: 10px 0px;
+    margin-top: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .nosotros {
@@ -235,7 +262,7 @@ div {
     ol {
         li {
             font-weight: 400;
-            font-size:nth($font-size, 3);
+            font-size: nth($font-size, 3);
             margin-left: 30px;
             margin-right: 120px;
             text-decoration: none;
