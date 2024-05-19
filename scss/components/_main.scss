@@ -67,17 +67,17 @@ main {
 }
 
 .body-product {
-    background: #FFC069;
+    background: $color-1;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px;
     margin: 0;
 }
 
 .product-card {
-    width: 90%;
-    margin: 50px auto;
-    background: #ffffff;
+    width: 60%;
+    margin: 30px auto;
+    background: $color-2;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
 }
 
@@ -92,11 +92,11 @@ main {
 
 .product-card .img-product .whishlist {
     position: absolute;
-    bottom: 20px;
+    top: 20px;
     right: 20px;
-    background: #FFC069;
-    width: 40px;
-    height: 40px;
+    background: $color-3;
+    width: 50px;
+    height: 50px;
     padding: 8px;
     border-radius: 50%;
     text-align: center;
@@ -107,36 +107,38 @@ main {
 }
 
 .product-card .info-product .title-product {
-    font-size: 18px;
+    font-size: nth($font-size, 4);
     font-weight: 700;
-    color: #131313;
+    color: $color-5;
+    padding-top: 15px;
 }
 
 .product-card .info-product .description {
-    font-size: 15px;
+    font-size: nth($font-size, 3);
     font-weight: 400;
     margin-bottom: 30px;
-    color: #414141;
+    color: $color-5;
 }
 
 .product-card .info-product .price {
-    background: #FFC069;
+    background: $color-3;
     padding: 8px 10px;
-    border-radius: 30px;
-    font-weight: 400;
-    font-size: 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: nth($font-size, 2);
 }
 
 .btn-cart {
-    background: #131313;
-    color: #ffffff;
+    background: $color-5;
+    color: $color-1;
     padding: 10px 0px;
     margin-top: 30px;
+    font-size: nth($font-size, 3);
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .nosotros {
