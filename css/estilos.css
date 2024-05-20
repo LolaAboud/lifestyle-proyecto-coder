@@ -71,12 +71,15 @@ main .grid-container {
     align-items: flex-end; }
     main .grid-container .texto-derecha-1 p,
     main .grid-container .texto-derecha-2 p {
-      text-align: right; }
+      text-align: right;
+      padding-left: 50px; }
   main .grid-container .texto-izquierda {
     display: flex;
     align-items: flex-start; }
+    main .grid-container .texto-izquierda p {
+      padding-right: 70px; }
   main .grid-container img {
-    width: 400px;
+    width: 500px;
     box-shadow: -4px 3px 13px 0px #FF6B35;
     -webkit-box-shadow: -4px 3px 13px 0px #FF6B35;
     -moz-box-shadow: -4px 3px 13px 0px #FF6B35; }
@@ -87,7 +90,7 @@ main .grid-container {
     font-weight: bold; }
   main .grid-container p {
     color: #004E89;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 200; }
 
 .categorias {
@@ -156,10 +159,10 @@ main .grid-container {
   color: #004E89; }
 
 .product-card .info-product .price {
-  background: #FF6B35;
+  background: #1A659E;
+  color: #EFEFD0;
   padding: 8px 10px;
   border-radius: 20px;
-  font-weight: bold;
   font-size: 18px; }
 
 .btn-cart {
@@ -433,16 +436,16 @@ footer {
       grid-area: 1/1/1;
       align-items: center; }
     main .grid-container .texto-derecha-2 {
-      align-items: center; }
+      align-items: center !important; }
     main .grid-container .texto-izquierda {
       grid-area: 4/1/3;
-      align-items: center; }
+      align-items: center !important; }
     main .grid-container .imagen-1 {
       grid-area: 2/1/2;
-      align-items: center; }
+      align-items: center !important; }
     main .grid-container .imagen-2 {
       grid-area: 4/1/4;
-      align-items: center; }
+      align-items: center !important; }
   .container {
     max-width: 600px;
     width: 100%;
@@ -461,14 +464,20 @@ footer {
   main .grid-container .texto-izquierda h2 a {
     font-size: 25px; }
   main .grid-container .texto-derecha-1 p {
-    font-size: 22px;
-    text-align: center; }
+    font-size: 22px !important;
+    text-align: center;
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
   main .grid-container .texto-derecha-2 p {
-    font-size: 22px;
-    text-align: center; }
+    font-size: 22px !important;
+    text-align: center;
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
   main .grid-container .texto-izquierda p {
-    font-size: 22px;
-    text-align: center; }
+    font-size: 22px !important;
+    text-align: center;
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
   footer {
     justify-content: space-around; }
     footer .logo-footer img {
@@ -479,6 +488,15 @@ footer {
       font-size: 35px; }
     footer div form div .newsletter {
       font-size: 20px; } }
+
+@media screen and (max-width: 515px) {
+  .body-product {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .product-card {
+    width: 85%;
+    margin: 20px auto; } }
 
 @media screen and (max-width: 370px) {
   main h1 {
@@ -492,14 +510,27 @@ footer {
   main .grid-container .texto-izquierda h2 a {
     font-size: 22px; }
   main .grid-container .texto-derecha-1 p {
-    font-size: 18px;
-    text-align: center; }
+    font-size: 18px !important;
+    text-align: center;
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
   main .grid-container .texto-derecha-2 p {
-    font-size: 18px;
-    text-align: center; }
+    font-size: 18px !important;
+    text-align: center;
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
   main .grid-container .texto-izquierda p {
-    font-size: 18px;
-    text-align: center; }
+    font-size: 18px !important;
+    text-align: center;
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
+  .body-product {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .product-card {
+    width: 85%;
+    margin: 20px auto; }
   footer {
     padding-top: 60px; }
   .logo-footer img {

@@ -34,16 +34,20 @@ main {
 
             p {
                 text-align: right;
+                padding-left: 50px;
             }
         }
 
         .texto-izquierda {
             display: flex;
             align-items: flex-start;
+            p {
+                padding-right: 70px;
+            }
         }
 
         img {
-            width: 400px;
+            width: 500px;
             box-shadow: -4px 3px 13px 0px $color-3;
             -webkit-box-shadow: -4px 3px 13px 0px $color-3;
             -moz-box-shadow: -4px 3px 13px 0px $color-3;
@@ -60,7 +64,7 @@ main {
 
         p {
             color: $color-5;
-            font-size: nth($font-size, 3);
+            font-size: nth($font-size, 5);
             font-weight: 200;
         }
     }
@@ -167,10 +171,10 @@ main {
 .product-card {
     .info-product {
         .price {
-            background: $color-3;
+            background: $color-4;
+            color: $color-1;
             padding: 8px 10px;
             border-radius: 20px;
-            font-weight: bold;
             font-size: nth($font-size, 2);
         }
     }
