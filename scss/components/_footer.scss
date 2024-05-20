@@ -26,6 +26,10 @@ footer {
                     color: map-get($links-footer, ftn-color);
                     font-size: map-get($links-footer, ftn-size);
                     text-decoration: map-get($links-footer, txt-deco);
+
+                    &:hover {
+                        color: $color-3;
+                    }
                 }
             }
         }

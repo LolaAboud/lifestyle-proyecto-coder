@@ -8,17 +8,16 @@ $color-5: #004E89;
 
 //! LISTA
 
-$font-size:
-14px,
-18px,
-20px,
-22px,
-25px,
-30px,
-35px,
-40px,
-45px,
-16px;
+$font-size: 14px,
+    18px,
+    20px,
+    22px,
+    25px,
+    30px,
+    35px,
+    40px,
+    45px,
+    16px;
 
 //! OPERACION
 
@@ -26,24 +25,28 @@ $ancho-img: 400px;
 
 //! MAPA
 
-$links-footer:(
-        ftn-color: $color-5,
-        ftn-size: nth($font-size, 2),
-        txt-deco: none,
+$links-footer: (
+    ftn-color: $color-5,
+    ftn-size: nth($font-size, 2),
+    txt-deco: none,
 );
 
 //! EXTEND
 
-%display-grid{
+%display-grid {
     display: grid;
     align-items: center;
-};
+}
+
+;
 
 //! MIXIN
 
-@mixin flex($flex, $justify, $align, $column){
-            display: $flex;
-            justify-content: $justify;
-            align-items: $align;
-            flex-direction: $column;
-};
+@mixin flex($flex, $justify, $align, $column) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $column;
+}
+
+;
